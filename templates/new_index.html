@@ -1,0 +1,99 @@
+{% extends "/templates/index_copy.html" %}
+
+
+{% block p %} -->
+<!--  <center><img src="{{ url_for('static', filename='img/legal.png') }}" alt="TuringTonks" width="200" height="180" style="margin:1px 0px" ></center> -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Page Title</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ /* background-color: #333;*/
+}
+.header 
+{
+  /*padding: 10px 16px;*/
+  /*background-image: url("./static/img/headerback4.png");*/
+  background-color:black;
+  /*height:8%;*/
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 10%;
+  /*padding:30px;*/
+  /*background-color:white;*/
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+/*li a:hover {
+  background-color: #111;
+}*/
+
+
+</style>
+<div class="header" id="myHeader"  style="color:white;">
+        
+          <ul>
+  <li style="float:right; font-size:1.25em; "><a href="/?">Home</a></li>
+  <li style="float:right; font-size:1.25em;"><a href="about1?">About Us</a></li>
+  <li style="float:right; font-size:1.25em;"><a href="https://github.com/">Code</a></li>
+  <li ><a class="active" href="#about" style="font-size:1.5em;">Search Legal AI</a></li>
+</ul>
+        
+        </div>
+
+<br><br><br>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col"> -->
+      
+	<p> {{ text1 }} </p>
+	<p>{{ text2 }} </p>
+	<p>{{ text3 }} </p>
+	<p>{{ text4 }} </p>
+	<p>{{ text5 }} </p>
+	<p>{{ text6 }}</p>
+	<p>{{ text7 }} </p>
+	<p>{{ text8 }} </p>
+	<p>{{ text9 }}</p>
+	<p>{{ text10 }}</p>
+	<p>{{ text11 }}</p>
+	<p>{{ text12 }}</p>
+	</html>
+	
+<!--     </div>
+  </div>
+</div> -->
+
+<!-- {% endblock %}
+
+{% block script %}
+<script>
+  alert("Search Successful!");
+</script>
+{% endblock %}

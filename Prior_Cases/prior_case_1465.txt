@@ -1,0 +1,180 @@
+ 237; AIR 1965 SC 1216; 1965 (1) SCR 815 (26 October 1964)
+26/10/1964 SUBBARAO, K.
+SUBBARAO, K.
+SHAH, J.C.
+SIKRI, S.M.
+CITATION: 1965 AIR 1216 1965 SCR (1) 815
+CITATOR INFO :
+R [1989 SC 611] (6) D 1989 SC1654 (15) RF [1992 SC 224] (11)
+Income Tax-Debtor and Creditor (Occupation Period) Ordinance (Malaya Ord. No. XLII of 1948)-Scope of-Liability to tax on principle of estoppel.
+The Japanese currency introduced into Malaya during the Japanese occupation began to depreciate after January 1963, so that debts paid off and received in that currency resulted in loss to the creditors. The Government of India, by a notification issued in 1947, propounded a scheme to give relief to Indian nationals carrying on business in Malaya, and the Central Board of Revenue issued further instructions on the scheme. One of the instructions was that if any creditors opted to accept the scheme, a recovery subsequently made by them, with respect to the debt due to them was to be taken as their income. In 1948, the Debtor and Creditor (Occupation Period) Ordinance No. XLII of 1948, of Malaya was passed by the Malaya Legislature. Under that Ordinance, payments made in Japanese currency were to be valued and scaled down in accordance with its Schedule, so that a payment in Japanese currency would be a valid discharge of a debt only to the extent of such revaluation.
+A creditor could enforce his debt to the extent not discharged and the debtor was under an obligation to discharge it to that extent. On the questions as to (i) whether amounts, recovered by creditors who had accepted the scheme, from their debtors, in terms of the Ordinance, were liable to income-tax; and (ii) whether the debtors could claim the payments made by them as deductions, the High Court held, (i) that the assessees who had received payments would not he liable to tax in respect of amounts they had received towards principal, but they would be so liable in respect of moneys which they had received towards interest;
+and (ii) that those assessees who had made payments towards the debts, would be entitled to deduct from their income, and claim exemption from tax only such amounts as they had paid on account of interest, but they would not be entitled to deduct any payment made on account of principal. The High Court also gave directions that open payments should be appropriated according to the law of appropriation of payments. The Commissioner and a debtor-assessee appealed to the Supreme Court.
+HELD : The appeals should be dismissed.
+(i) The creditor-assessees were not' precluded on the principle of "approbate and reprobate" from pleading that the income they derived subsequently, by realisation of the revived debts, was not taxable income. The doctrine was only a species of estoppel and cannot operate against the statute. If a particular income is not taxable under the Income-tax Act, it cannot be taxed on the basis of estoppel or any other equitable doctrine. [822 F-H] (ii) Under the Ordinance, the discharged debts became enforceable to the extent of the balance of the amount due after the scaling down of the 816 payments, and the contention of the Revenue that the State provided for compensation for the loss incurred by the creditor-assessees could not be accepted. [825 B-E] (iii) The Income-tax Officer could only impose income tax on the income recovered by the assessees thereafter towards their debts if such income was taxable under the provisions of the Act. So too in regard to the payments made by the Assessees towards such debts, they could claim relief by way of deduction only if such deductions were permissible under the Act. [825 F-G]
+CIVIL APPELLATE JURISDICTION: Civil Appeals Nos. 55, 888 and 889 of 1962 and 518 to 520, 722, 724, 725, 727 to 729 & 732 to 735 of 1963.
+Appeals from the judgment dated August 19, 1958, of the Madras High Court in Referred Case No. 52, R. C. No. 90, 43 and 82, 33, 58 to 60, 64 and 65 of 1955 and 97, 98, 102, 112, 113 and 115 of 1956, respectively.
+C. K. Daphtary, Attorney-General, S. V. Gupte, Solicitor-General, Gopal Singh, R. H. Dhebar and R. N.
+Sachtliey, for the appellant (in C. A. No. 55 of 1962).
+C. K. Daphtary, Attorney-General, S. V. Gupte, Solicitor-General, N. D. Karkhanis, R. H. Dhebar and R. N.
+Sachthey, for the appellant (in C. As. Nos. 888-889 of 1962 and 722, 724, 725, 728 to 729 and 732 to 735 of 1963) and for the respondents (in C. As. Nos. 415 of 1962, 518 to 520 of 1963).
+R. Ganapathy Iyer, for the appellants (in C. A. Nos.
+518 to 520 of 1963) and for the respondents (in C. As.
+Nos. 55 of 1962, 888 to 889 of 1962 and 729, 732 and 735 of 1963).
+K. Srinivasan and R. Gopalakrishnan, for the respondent (in C.A. Nos. 733 to 734 of 1963).
+K. R. Chaudhuri, for the respondent (in C.A. No. 724 of 1963).
+A. V. Viswanatha Sastri, K. Parasaran, K. Rajendra Chaudhuri and K. R. Chaudhuri, for the respondent (in C.A.
+No. 722 of 1963).
+S. Swaminathan and M. S. Narasimhan, for the respondents ,(in C.A. Nos. 725 and 728 of 1963).
+817 The Judgment of the Court was delivered by Subba Rao J. These 16 appeals are filed against the Judg- ment of the High Court of Judicature at Madras and raise the question of the effect of the Debtor and Creditor (Occupation Period) Ordinance No. XLII of 1948 of Malaya, hereinafter called the Ordinance, on the liability of the assessee to pay income-tax in respect of pre-occupation debts revived thereunder.
+During the last World War Japan occupied Malaya. During the period of their occupancy i.e., from February 1942 to September 1945, they introduced their own currency in dollars. During that period both the currencies were in vogue though there was a progressive depreciation of Japanese currency in its relation to Malayan currency. On September 5, 1945, the British Government re- occupied Malaya and introduced the Malayan currency as legal tender in place of Japanese currency. The Indian nationals, who were carrying on business in Malaya during the; period of Japanese occupation, were hit adversely and suffered losses.
+The Government of India came to their rescue and by Notification dated August 14, 1947, they propounded a scheme to give them relief by allowing them to set off the losses incurred by them during the 5 years relevant to the assessment years 1942-43 to 1946-47 against the profits of the assessment years 1942-43 and 1941-42. We shall consider the scheme in some detail at a later stage of the judgment.
+On December 16, 1948, the Malayan Legislature passed the Ordinance declaring that payments made in Japanese currency by debtors to their creditors in respect of debts incurred prior to and during the Japanese occupation were to be valued and scaled down in accordance with the schedule appended to the Ordinance. We shall deal with Ordinance in some detail at the appropriate place but the broad effect of the Ordinance was that though a debt had been discharged fully by paying the amount due in Japanese currency, the debt was revived in proportion to the depreciation of Japanese currency in relation to the Malayan currency as laid down by the schedule. The creditor's right to recover the debt to the said extent and the liability of the debtor to pay the same revived.
+As the question raised is one of law and does not depend upon the peculiar facts of each case, we think it is enough if we 818 state briefly the facts of two cases, one illustrating the claim of an assessee against the imposition of income-tax in respect of the income he realized by the revival of the debts and the other illustrating that of an assessee to an allowance on the ground that he paid the scaled down debts over again.
+The respondent in Civil Appeal No. 722 to 735 of 1963 is a firm carrying on business of money-lending in Kampar in Federated Malaya State. It applied for relief under the special scheme. It incurred loss for the aforesaid four years of Rs. 1,33,125. For the years 1941-42 and 1942-43 it had a profit of Rs. 53,010 and Rs. 35,753 respectively. The said profits were set off against the losses and the taxes paid by it for the years 1941-42 and 1942-43 were refunded to it. After the Ordinance was passed, in terms of that Ordinance the respondent recovered 6,437 dollars during the previous year ending April 12, 1952 corresponding to the assessment year 1952-53.
+Civil Appeals Nos. 518 to 520 of 1963 deal with the converse case. The appellant therein is a Hindu undivided family carrying on, inter alia, a money-lending business in its own village in Kaula Kubbu Bharu and Parit Buntar in the Federated Malaya States. In the course of its business it had taken moneys as deposits from various persons before April 12, 1942. During the period of occupation it discharged its liability to various creditors but after the publication of the Ordinance it had to pay again to creditors 6,214.58 dollars in the previous year ending April 12, 1950; 28,586 dollars for the previous year ending April 12, 1951; and 11,547 dollars for the previous year ending April 12, 1952. The aforesaid amounts were claimed by the appellant as deductions respectively for the assessment years 1950-51, 1951-52 and 1952-53.
+The following tabular form at a glance gives the claims of the assessees as creditors or debtors, as the case may be 819 1\. civil Appeal No.
+2\. R.C. No.
+3\. appellant
+4\. Respondent
+5\. Assessment year
+6\. Claim
+7\. Issue for determination
+1\. 722 t0 735 of 1963 & 55 of 1962
+2\. 33 of 1955
+3\. Comm. of I.T., Madras 4\. O. RM SP. SV. Firm.
+5\. 1951-52
+6\. $ 57395-69
+7\. Creditor claims that the receipt is capital and not revenue.
+1\. Nil
+2\. 52 of 1955
+3\. do
+4\. V. MR. Firm Muar
+5\. 1951-52
+6\. $39,851
+7\. do
+1\. Nil
+2\. 58 of 1955
+3\. do
+4\. VP.AL. CT. Chidambaram chettiar
+5\. 1951-52
+6\. $9889
+7\. do
+1\. Nil
+2\. 59 of 1955
+3\. do
+4\. RM. P. Alagappa Chettiar
+5\. 1951-52
+6\. $355000
+7\. do
+1\. Nil
+2\. 60 of 1955
+3\. do
+4\. M. RM. SP. V. Venkatachalam Chettiar
+5\. 1951-52
+6\. $9006
+7\. do
+1\. Nil
+2\. 64 of 1955 3 do 4\. RM. P. Alagappa Chettiar.
+5\. 1951-52
+6\. $$35500
+7\. do
+1\. Nil
+2\. 65 of 1955
+3\. do
+4\. M. RM. SP. SM. Swaminathan Chettiar
+5\. 1951-52
+6\. $ 9006
+7\. do
+1\. Nil
+2\. 97 of 1956
+3\. do
+4\. M/s A.L.A. Firm
+5\. 1951-52
+6\. $8388
+7\. do
+1\. nil
+2\. 98 of 1956
+3\. do
+4\. AR. M. M. Firm
+5\. 1951-52
+6\. 6770
+7\. do
+1\. Nil
+2\. 102 of 1956
+3\. do
+4\. S.M. RM. Meyyappa Chettiar & sons
+5\. 1950-51, 1951-52
+6\. $1119, $3214
+7\. do
+1\. Nil
+2\. 112 of 1956
+3\. do
+4\. AR. M. M. Firm (Penang) AR. M. M. Arunachalam
+5\. 1953-54
+6\. $2445 7 do
+1\. Nil
+2\. 113 of 1956
+3\. do
+4\. P. S. R. M. Annamalai Subramaniam Chettiar
+5\. 1951-52
+6\. $ 12004
+7\. do
+1\. Nil
+2\. 115 of 1956
+3\. do
+4\. M/s L. AR. Firm
+5\. 1951-52
+6\. $1979.62
+7\. do
+1\. 518 to 520 of 1963
+2\. 115 of 1956
+3\. O. V. R. SV. AP. Arunachalam Chettiar
+4\. Commissioner of Income-tax, madras
+5\. 1951-52, 1952-53
+6\. $ 28, 586 $11, 574
+7\. Debtor claims deduction , On account of this payment
+1\. 888 & 889 of 1962
+2\. 90 of 1955
+3\. Commissioner of Income Tax, madras
+4\. O. R. M. O. M. A. M. Chidambaram Chettiar
+5\. 1951-52 & 1952-53
+6\. $ 6, 746 $664
+7\. Creditor claims that the receipt is capital and not revenue.
+Supp/64-9 820 The Income-tax Officers held that during the period of Japanese occupation the debts were discharged and that the receipt of additional amounts under the Ordinance was in fact assessable to tax. They also held that in the case of an assessee who was a debtor no deduction was permissible on the ground that the amounts paid represented only repayment of capital and not business expenditure. On appeal the Appellate Assistant Commissioner held that the receipts by the assessee in respect of the revived debts were only realization of the original amounts lent and, therefore, could not be regarded as income. In the case of the claim for deduction, he agreed with the view of the Income-tax Officer. On further appeal to the Tribunal, in the case of receipts it held that the assessee by claiming benefits under the scheme and in including all its cash and Bank balances in the Malayan business as part of the losses incurred therein in effect indirectly wrote off the debts due to them and, therefore, the recoveries under the Ordin- ance were only a subsequent realization of the written off bad debts and, therefore, assessable to income-tax. In those appeals relating to deductions, the Tribunal confirmed the orders of the Appellate Assistant Commissioner.
+The High Court answered the questions referred to it as follows:
+(1) Where an assessee has received repayments, he will not be liable to tax in respect of amounts he has received as or towards principal, but he will be so liable in respect of moneys which he has received as or towards interest.. Where only part of the debt has been recovered, the assesse will be at liberty, subject to the law relating to appropriation of payments, to appropriate the money he has received either towards principal or interest. The assessment in respect of such receipts will proceed on this basis, that is to say, if the payment has been lawfully appropriated towards interest, will be liable to pay tax thereon. But if he has lawfully appropriated it towards principal, he will not be liable to pay tax on it.
+(2) Where an assessee has made payments, he will be entitled to deduct them from his income and claim exemption from tax for only such amounts as he has paid on account of interest. He will not be entitled to deduct any payments on account of principal.
+821 The Tribunal was directed to review the assessment in the light of the said directions. The main reason given by the High Court for giving the said answers was that the result of the Ordinance was to revive the old debts and the question of the exigibility of the said income to tax can only be decided on the provisions of the Income-tax Act and not by the terms of the scheme of the Ordinance. Hence the appeals.
+The learned Solicitor-General, appearing for the Revenue, raised before us the following three points: (1) Sub-s. (2) of s. 4 of the Ordinance on which reliance was placed by the High Court applies only to pre-occupation capital debts and the debts with which the appeals are concerned are not pre- occupation capital debts and, therefore, they are not revived thereunder. (2) The assessees having taken benefit under the scheme propounded by the Government of India which contained a condition that if any recoveries subsequently made would be taken as income,, they are now precluded from contending that the, amounts realized towards the revived debts are not taxable on the principle of approbate and reprobate. And (3) on a reasonable construction of the relevant sections of the Ordinance it should be held that there was no revival of the debts but only that the State had provided for compensation for the losses incurred during the occupation period by the assessees.
+The first question had not been raised at any stage of the proceedings before the Tribunal and the High Court. Nor does it find a place in the statement of case. We cannot, therefore, allow the learned Counsel to raise it for the first time before us.
+Nor has the second question been raised in the High Court in the form in which it is presented before us. The scheme propounded by the Government of India, inter alia, contains the following provisions :
+(i) No assessee was under any obligation to accept the scheme. If he desired to opt for the scheme be was required to give option with one month after he was informed of the scheme.
+(ii) An assessee was permitted to include in his expenses certain items which would be inadmissible under the Indian Income-tax Act.
+(iii) The losses suffered by an assessee during the five years relevant to the assessment years 1942-43 to 1946-47 were to be aggregated.
+822 (iv) An assessee was permitted to carry the aggregated loss backward and set it off against his profits for the assessment year 1942-43.
+(v) Any loss still unabsorbed could be carried backward to the year 1941-42.
+(vi) Any excess tax found to have been paid after recomputing the income of an assessee by carrying his loss backward could be refunded to him.
+(vii) The loss could not be carried forward.
+The Central Board of Revenue issued further instructions on the above scheme by its letter dated December 1, 1947. One of the instructions was that debts due to the assessee if paid in Japanese currency would be taken to have been satisfied to that extent and excluded from the asset side in the balance sheet, provided that if any recovery was subsequently made, it was to be taken as income. Briefly stated, under the scheme the losses suffered by an assessee during the assessment years 1942-43 to 1946-47 were set off against his profits for the assessment years 1942-43 and 1941-42 and any unabsorbed loss could not be carried forward. The debts discharged in Japanese currency were excluded from the assets side in the balance sheet but the authority reserved for itself the right to treat any recoveries subsequently made as income. The contention is that the assessees having opted to accept the scheme, derived benefit thereunder, and agreed to have their discharged debts excluded from the asset side in the balance sheet subject to the condition that subsequent recoveries by them would be taxable income, they are now precluded, on the principle of "approbate and reprobate", from pleading that the income they derived subsequently by realization of the revived debts is not taxable income. The doctrine of "approbate and reprobate" is only a species of estoppel; it applies only to the conduct of parties. As in the case of estoppel, it cannot operate against the provisions of a statute. If a particular income is not taxable under the Income-tax Act, it cannot be taxed on the basis of estoppel or any other equitable doctrine. Equity is out of place in tax law; a particular income is either exigible to tax under the taxing statute or it is not. If it is not the Income- tax Officer has no power to impose tax on the said income.
+The decision in Amarendra Narayan Roy v. Commissioner of Income-tax, West Bengal(1) has no bearing on the question raised (1) A.I.R. 1954 Cal. 271.
+823 before us. There the concessional scheme tempted the assessee to disclose voluntarily all his concealed income and he agreed to pay the proper tax upon it. The agreement there related to the quantification of taxable income but in the present case what is, sought to be taxed is not a taxable income. The assessee in such a case can certainly raise the plea that his income is not taxable under the Act.
+We, therefore, reject this plea.
+To appreciate the third argument it is necessary to notice the relevant terms of the Ordinance. The Ordinance was issued by the Malayan Government to regulate the relationship between the debtor and creditor in respect of debts incurred prior to and during the period of the enemy occupation of the territories comprising the federation of Malaya. The relevant sections of the Ordinance read:
+Section 4. Discharge during occupation period of preoccupation debts :
+(1) Subject to the provisions of sub-s. (2) of this section, where any payment was made during the occupation period in Malayan currency or occupation currency by a debtor or by his agent or by the Custodian or a liquidation officer purporting to act on behalf of such debtor, to a creditor, or to his agent or to the Custodian or a Liquidation Officer purporting to act on behalf of such creditor, and such payment shall be a valid discharge of such pre- occupation debt to the extent of the face value of such payment.
+(2) In any case- (a) where the acceptance of such payment in occupation currency was caused by duress or coercion; or (b) where such payment was made after the thirtyfirst day of December 1943, in occupation currency in respect of a pre- occupation capital debt, exceeding two hundred and fifty dollars in amount, which- (i) was not due at the time of such payment;
+or (ii) if due, was not demanded by the creditor or by his agent on his behalf and was not payable within the occupation period under a time essence contract;
+824 (iii) if due and demanded as aforesaid was not paid within three months of demand or within such extended period as was mutually agreed between the creditor or his agent and the debtor or his agent; or (c)......... such payment shall be revalued in accordance with the scale set out in the Schedule to this Ordinance and shall be a valid discharge of such debt only to the extent of such revaluation.
+THE SCHEDULE
+1\. (a) : Where any such payment as it mentioned in sub-section (2) of section 4 of this Ordinance was made in occupation currency during any month or on any day mentioned in the first column of the scale set out in paragraph 3 of this Schedule, such payment shall be revalued by taking the number of dollars in occupation currency set out opposite such month or day in the second column of the said scale as equivalent to one hundred dollars Malayan currency, and so in proportion for any portion of such payment amounting when revalued, to less than one hundred dollars Malayan currency.
+(b) Where any such payment was made in occupation currency on or after the thirteenth day of August 1945, the value of such payment shall be taken to be nil.
+2\. (a) : In the case of an unsatisfied occupation debt or part thereof which falls to be revalued under section 6 of this Ordinance such debt or part thereof shall be revalued at the appropriate date as provided in the said section or sub-section by taking the number of dollars in occupation currency mentioned opposite such month or day in the second column of the scale set out in paragraph 3 of this Schedule as equivalent to one hundred dollars Malayan currency, and so in proportion for any portion of such debt amounting, when revalued to less than one hundred dollars Malayan currency.
+(b)When any such debt or part of a debt fell due for payment on or after the thirteenth day of August 1945,its value shall be taken to be nil.
+3\. Sliding scale of the value of occupation currency 1942-45.
+We have not allowed the Solicitor-General to contend that sub-s. (2) of S. 4 of the Ordinance does not apply to the debts in 825 question as throughout the proceedings of this case it was assumed that it applies to the said debts. During the Japanese Occupation both the Japanese currency and the Malayan currency were in vogue. In January 1943 the Japanese currency began to depreciate and by August 13, 1945, it ceased to be of any value. During that process of devaluation debts were paid off and received in Japanese currency which resulted in loss to the creditors. To regulate the relationship between creditors and debtors.
+during that period the said Ordinance was passed by the Malayan Legislature on December 16, 1948. Under the said Ordinance payments in Japanese currency were to be valued and scaled down in accordance with the Schedule appended to the Ordinance. If a debtor had paid his debt in depreciated Japanese currency, he was required to pay over again a certain amount to be ascertained by the application of the provisions of the Schedule. In terms sub-s. (2) says that the payment in Japanese currency shall be a valid discharge of such debt only to the extent of such revaluation. When the payments made towards debts were scaled down, the debts were revived in regard to the balance of the debt. After the making of the Ordinance, the creditor could enforce his debt to the extent not discharged and the debtor had the obligation to discharge the same. On the express terms of the Ordinance it is impossible to accept the contention that the State provided for compensation for the losses incurred bY the assessees. indeed the State did not pay any compensation at all. The legal relationship of the creditor and debtor was not created by the Ordinance but it was regulated on the basis of the pre-existing relationship.
+We, therefore, hold, agreeing with the High Court, that under the Ordinance the discharged debts became enforceable to the extent of the balance of the amount due after the scaling down of the payments. If so, the Income-tax Officer could only impose tax on the income recovered by the assessees thereafter towards their debts if such income was taxable under the provisions of the Act.
+So too, in regard to the payment made by the assessees towards such debts they could claim relief by way of deductions only if such deductions were permissible under the Act.
+The High Court held that the assessees who had received repayments would not be liable to tax in respect of amounts they had received towards principal but they would be so liable in respect of moneys which they had received towards interest. It further held that those assessees who had made payments towards the 826 debts would be entitled to deduct from their income and claim exemption from tax only such amounts as they had paid on account of interest but they would not be entitled to deduct any payment made on account of principal. The High Court also gave a direction that in the case of open payments the respective amounts paid towards principal or interest should be ascertained in accordance with the law of appropriation of payments. Neither the learned Solicitor- General, who appeared for the Revenue, nor the learned counsel, who appeared for the assessees, questioned the correctness of the said directions if the construction we placed on the Ordinance was correct. The directions given by the High Court will, therefore, stand. In our view, the High Court gave correct answers to the questions referred to it.
+In the result the appeals are dismissed with costs. One hearing fee. 

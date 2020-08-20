@@ -1,0 +1,175 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/searchcss.css') }}">
+</head>
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ /* background-color: #333;*/
+}
+.header 
+{
+  /*padding: 10px 16px;*/
+  /*background-image: url("./static/img/headerback4.png");*/
+  background-color:black;
+  /*height:8%;*/
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 10%;
+  /*padding:30px;*/
+  /*background-color:white;*/
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+/*li a:hover {
+  background-color: #111;
+}*/
+
+
+</style>
+<div class="header" id="myHeader"  style="color:white;">
+        
+          <ul>
+  <li style="float:right; font-size:1.25em; "><a href="/?">Home</a></li>
+  <li style="float:right; font-size:1.25em;"><a href="about1?">About Us</a></li>
+  <li style="float:right; font-size:1.25em;"><a href="https://github.com/">Code</a></li>
+  <li ><a class="active" href="#about" style="font-size:1.5em;">Search Legal AI</a></li>
+</ul>
+        
+        </div>
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Hello frens. We gud ppl. Pliss see our work.</p>
+  <p>We r IRG4. Okaythenxbye :D</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="./static/img/asrima1.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>asrima</h2>
+        <!-- <p class="title">CEO & Founder</p> -->
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>jane@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="./static/img/milo1.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>milo</h2>
+        <!-- <p class="title">Art Director</p> -->
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="./static/img/simzzzz1.jpeg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>simzzzz</h2>
+        <!-- <p class="title">Designer</p> -->
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>

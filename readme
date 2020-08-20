@@ -1,0 +1,33 @@
+
+This is the README to work the fantastic-LegalSearchEngine repository, an official submission for the Netapp Women Innovathon(WIN)
+The code has been tested on a dataset of legal cases procured online, and can be found at: https://drive.google.com/drive/folders/16-kGqOEBppr1hOQ2l7TkU2vTrvkpr9Fh?usp=sharing
+
+Keep the dataset in the outer directory with python code and operate.
+
+- api.py has 3 views/APIs and a homepage:
+Home:           Lets user enter their search query and filter by data/Appeal Number/Appellate. The filtering is done on an or
+                basis and will return results for (Query && (Date Or Appeal Number or Appellate))
+            
+api_query:      Takes text query and/or filter information from user and uses pre-computed posting lists to rank the document set. Filters are 
+                implemented by writing individual logic to extract data/appeal number etc. Other features extracted which will be 
+                integrated with the system in the future are: Citation, Citator Info, Whether the appeal was dismissed or allowed, Criminal/Civil Appellate Jurisdiction 
+                By whom the Judgment of the Court was delivered by, Appellant, Respondent, Appeal number, Mention of constitutional acts, No order as to costs.
+                This API returns the list of top 10 documents.
+
+api_all:        API to return list of all docs available
+
+download_file:  API for user to download the requested document
+
+
+- templates has html files for basic UI. UI is to be updated and improved post midsem to include data visualisations and a short bullet-form view
+of cumbersome legal reports
+
+-netapp_test2.py contains pythonic code for legal feature extraction from case documents. Features like Citation, Citator Info, Whether the appeal was dismissed or allowed, Criminal/Civil Appellate Jurisdiction 
+            By whom the Judgment of the Court was delivered by, Appellant, Respondent, Appeal number, Mention of constitutional acts, No order as to costs, Date etc are extracted. This code is later used to also filter
+            the ranked documents according to features specified by the user.
+
+-scan.py contains pythonic code for the vector space model which makes a posting list out of the dataset corpus. This file usually takes a long time to run but once run, does not need to be updated again.
+It produces posting_list2.npy, titles2.npy, and norm2.npy which are results of the dataset directly used by the query code thus increasing speed.
+
+-test_queries.py asks the users for the query and uses files prduced by scan.py- posting_list2.npy, titles2.npy, and norm2.npy to rank the documents according to relevance of query.
+
