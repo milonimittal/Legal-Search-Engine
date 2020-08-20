@@ -423,36 +423,60 @@ def retrieve_finalJudgement(filename):
   judgement=final_judgement(lines)
   return judgement
 
+
+def checker_code(codeno,codestr):
+    if codestr=='Indian Penal Code':
+        if (codeno>511):
+            return None
+        else:
+            return 1
+    else:
+        return 1
+
+
 def ipc_cpc_check(lines):
   lines2=lines.splitlines()
   pc=[]
   ResSearch=0
-  c=0
   for line in lines2:
-    
-    if(re.search('IPC' , line)):
-      ResSearch = 1
-    if(re.search('Indian Penal Code' , line)):
-      ResSearch = 1
-    if(re.search('CPC' , line)):
-      ResSearch = 1
-    if(re.search('Criminal Procedure Code' , line)):
-      ResSearch = 1
+    code=[]
+    nltk_tokens = nltk.word_tokenize(line)  	
+    bigramsl=list(nltk.bigrams(nltk_tokens))
+    for term in bigramsl:
+        if(re.search('ipc' , term[0].lower())):
+            ResSearch = 1
+            code.append('Indian Penal Code')
+        if(re.search('indian' ,  term[0].lower())):
+            if(re.search('penal' ,  term[1].lower())):
+                ResSearch = 1
+                code.append('Indian Penal Code')
+        if(re.search('cpc' ,  term[0].lower())):
+                ResSearch = 2
+                code.append('Criminal Procedure Code')
+        if(re.search('criminal' ,  term[0].lower())):
+            if(re.search('procedure' ,  term[1].lower())):
+                ResSearch = 2
+                code.append('Criminal Procedure Code')
+        if(re.search('civil' ,  term[0].lower())):
+            if(re.search('procedure' ,  term[1].lower())):
+                ResSearch = 3
+                code.append('Civil Procedure Code')
+        
     if(ResSearch):
-      # c+=1
-      # match=re.search(r'[[sS]\.\ \d+', line)
-      # pc.append(match.group())
-      split= line.split( )
-      check=0
-      for term in split:
-        if check is 1:
-          check = 0
-          if (re.search(r'\d+', term)):
-            match=re.search(r'\d+', term)
-            pc.append('s. '+match.group()) 
-        if (re.search(r'[sS]\.', term)):
-          check = 1
-
+        
+        codecount=0
+#        print(code)
+        for term in bigramsl:
+#            print(term)
+            if ((term[0].lower()=='s.') or (term[0].lower()=='section')):
+                if (re.search(r'\d+', term[1])):
+                    match=re.search(r'\d+', term[1])
+#                    print('s. '+match.group(),code[codecount])
+                    if(checker_code(int(match.group()),code[codecount]) is not None):
+                        pc.append(('s. '+match.group(),code[codecount]))
+                        if (codecount+1 != len(code) ):
+                            codecount+=1
+                    
       # print(line)
     ResSearch=0
   pc = list(dict.fromkeys(pc))
@@ -462,29 +486,79 @@ def ipc_cpc_check(lines):
 def retrieve_penalCodes(filename):
   # filename='0603'
   start='Prior_Cases/'
-  f=open(start+filename+'.txt','r')
+  f=open(start+filename,'r')
   lines = f.read()
   codes = ipc_cpc_check(lines)
+  
   return codes
-"""Ignore the part below"""
 
-# filename='0001'
-# start='/content/fire2017data/FIRE2017-IRLeD-track-data/Task_2/Prior_Cases/prior_case_'
-# f=open(start+filename+'.txt','r')
-# lines = f.read()
-# # alldates=all_dates(lines)   #first date gives the date of case
-# # # citations=all_citations(lines)      #doesn't extract it
-# # citation= citation_check(lines)
-# # held = held_check(lines)
-# # appellate_jurisdiction, appeal_no = aj_check(lines)
-# # citatorInfo = citatorInfo_check(lines)
-# # appealAllowedDismissed = appeal_allowedOrDismissed(lines)
-# judge = judge_check(lines)
-# # appellant = appellant_check(lines)
-# # respondent = respondent_check(lines)
-# # order_to_costs = order_to_costs_check(lines)
-# print(judge)
 
-# print(lines)
+def getchapter(ipcno):
+    if ipcno>=1 and ipcno<=5:
+        return("Chapter I")
+    elif ipcno>=6 and ipcno<=52:
+        return("Chapter II")
+    elif ipcno>=53 and ipcno<=75:
+        return("Chapter III")
+    elif ipcno>=76 and ipcno<=106:
+        return("Chapter IV")
+    elif ipcno>=107 and ipcno<=120:
+        return("Chapter V")
+    elif ipcno>=120 and ipcno<=120:
+        return("Chapter VA")
+    elif ipcno>=121 and ipcno<=130:
+        return("Chapter VI")
+    elif ipcno>=131 and ipcno<=140:
+        return("Chapter VII")
+    elif ipcno>=141 and ipcno<=160:
+        return("Chapter VIII")
+    elif ipcno>=161 and ipcno<=170:
+        return("Chapter IX")
+    elif ipcno>=171 and ipcno<=171:
+        return("Chapter IXA")
+    elif ipcno>=172 and ipcno<=190:
+        return("Chapter X")
+    elif ipcno>=191 and ipcno<=229:
+        return("Chapter XI")
+    elif ipcno>=230 and ipcno<=263:
+        return("Chapter XII")
+    elif ipcno>=264 and ipcno<=267:
+        return("Chapter XIII")
+    elif ipcno>=268 and ipcno<=294:
+        return("Chapter XIV")
+    elif ipcno>=295 and ipcno<=298:
+        return("Chapter XV")
+    elif ipcno>=299 and ipcno<=377:
+        return("Chapter XVI")
+    elif ipcno>=378 and ipcno<=462:
+        return("Chapter XVII")
+    elif ipcno>=463 and ipcno<=489:
+        return("Chapter XVIII")
+    elif ipcno>=490 and ipcno<=492:
+        return("Chapter XIX")
+    elif ipcno>=493 and ipcno<=498:
+        return("Chapter XX")
+#    elif ipcno>=498A and ipcno<=5:
+#        return("Chapter I")
+    elif ipcno>=499 and ipcno<=502:
+        return("Chapter XXI")
+    elif ipcno>=503 and ipcno<=510:
+        return("Chapter XXII")
+    elif ipcno==511:
+        return("Chapter XXIII")
+    else:
+        return(None)
 
-# print(alldates)
+
+def retrieve_ipcs(ret):
+    newfile=[]
+    for filename in ret:
+#        print(filename)
+        pc=retrieve_penalCodes(filename)
+        for ipc, codename in pc:
+          if codename == 'Indian Penal Code':
+              newfile.append((filename,ipc))
+#              print(ipc)
+    return newfile
+    
+
