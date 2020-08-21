@@ -2,6 +2,8 @@ import flask
 from flask import request, jsonify
 from test_queries import *
 from netapp_test2 import *
+from mySummarizer import *
+from finaldetails import *
 from flask import Flask, send_file, render_template
 	
 app = flask.Flask(__name__)
@@ -72,38 +74,55 @@ def api_query():
    [cleanlist.append(x) for x in fin if x not in cleanlist]   
    fin=cleanlist 
 
-   if(ct<len(fin)):
-       text3=fin[0]
-   ct=ct+1
-   if(ct<len(fin)):
-       text4=fin[1]
-   ct=ct+1
-   if(ct<len(fin)):
-       text5=fin[2]
-   ct=ct+1
-   if(ct<len(fin)):
-       text6=fin[3]
-   ct=ct+1
-   if(ct<len(fin)):
-       text7=fin[4]
-   ct=ct+1
-   if(ct<len(fin)):
-       text8=fin[5]
-   ct=ct+1
-   if(ct<len(fin)):
-       text9=fin[6]
-   ct=ct+1
-   if(ct<len(fin)):
-       text10=fin[7]
-   ct=ct+1
-   if(ct<len(fin)):
-       text11=fin[8]
-   ct=ct+1
-   if(ct<len(fin)):
-       text12=fin[9]
-   ct=ct+1
-
-   return render_template("new_index.html",text1=text1,text2=text2,text3=text3,text4=text4,text5=text5,text6=text6,text7=text7,text8=text8,text9=text9,text10=text10,text11=text11,text12=text12)
+#   if(ct<len(fin)):
+#       text3=fin[0]
+#   ct=ct+1
+#   if(ct<len(fin)):
+#       text4=fin[1]
+#   ct=ct+1
+#   if(ct<len(fin)):
+#       text5=fin[2]
+#   ct=ct+1
+#   if(ct<len(fin)):
+#       text6=fin[3]
+#   ct=ct+1
+#   if(ct<len(fin)):
+#       text7=fin[4]
+#   ct=ct+1
+#   if(ct<len(fin)):
+#       text8=fin[5]
+#   ct=ct+1
+#   if(ct<len(fin)):
+#       text9=fin[6]
+#   ct=ct+1
+#   if(ct<len(fin)):
+#       text10=fin[7]
+#   ct=ct+1
+#   if(ct<len(fin)):
+#       text11=fin[8]
+#   ct=ct+1
+#   if(ct<len(fin)):
+#       text12=fin[9]
+#   ct=ct+1
+#   det0=getdetails(fin[0])
+#   det1=getdetails(fin[1])
+#   det2=getdetails(fin[2])
+#   det3=getdetails(fin[3])
+#   det4=getdetails(fin[4])
+#   det5=getdetails(fin[5])
+#   det6=getdetails(fin[6])
+#   det7=getdetails(fin[7])
+#   det8=getdetails(fin[8])
+#   det9=getdetails(fin[9])
+   det=[]
+   for filename in fin:
+       if (re.search(r'\d+', filename)):
+           det.append(getdetails(filename))
+   while(len(det)<10):
+       det.append((" "," "," "," "," "))
+   
+   
+   return render_template("simplesearch.html",text1=text1,text2=text2,det=det)
 
 @app.route('/docwise')
 def api_docwise():

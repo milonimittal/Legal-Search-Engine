@@ -7,7 +7,8 @@ import numpy as np
 import networkx as nx
  
 def read_article(file_name):
-    file = open(file_name, "r")
+    start='Prior_Cases/'
+    file = open(start+file_name, "r")
     filedata = file.readlines()
     # print(filedata)
     article=[]
@@ -94,6 +95,7 @@ def generate_summary(file_name, top_n=5):
     listToStr=listToStr+"....."
     listToStr = listToStr.replace("\"", "")
     print("Summarize Text: \n", listToStr)
+    return listToStr
 
 # let's begin
-generate_summary( "prior_case_0042.txt", 2)
+#generate_summary( "prior_case_0042.txt", 2)

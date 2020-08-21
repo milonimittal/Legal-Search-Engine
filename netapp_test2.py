@@ -550,15 +550,17 @@ def getchapter(ipcno):
         return(None)
 
 
-def retrieve_ipcs(ret):
+def retrieve_ipcs(filename):
     newfile=[]
-    for filename in ret:
+#    for filename in ret:
 #        print(filename)
-        pc=retrieve_penalCodes(filename)
-        for ipc, codename in pc:
-          if codename == 'Indian Penal Code':
-              newfile.append((filename,ipc))
+    pc=retrieve_penalCodes(filename)
+    for ipc, codename in pc:
+      if codename == 'Indian Penal Code':
+          newfile.append(ipc)
 #              print(ipc)
+    if len(newfile)==0:
+        return None
     return newfile
     
 

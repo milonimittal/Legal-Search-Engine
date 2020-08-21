@@ -1,0 +1,137 @@
+{% extends "/templates/index_copy.html" %}
+
+
+{% block p %} -->
+<!--  <center><img src="{{ url_for('static', filename='img/legal.png') }}" alt="TuringTonks" width="200" height="180" style="margin:1px 0px" ></center> -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Page Title</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ /* background-color: #333;*/
+}
+.header 
+{
+  /*padding: 10px 16px;*/
+  /*background-image: url("./static/img/headerback4.png");*/
+  background-color:black;
+  /*height:8%;*/
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 10%;
+  /*padding:30px;*/
+  /*background-color:white;*/
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+/*li a:hover {
+  background-color: #111;
+}*/
+
+
+
+}
+</style>
+<div class="header" id="myHeader"  style="color:white;">
+        
+          <ul>
+  <li style="float:right; font-size:1.25em; "><a href="/?">Home</a></li>
+  <li style="float:right; font-size:1.25em;"><a href="about1?">About Us</a></li>
+  <li style="float:right; font-size:1.25em;"><a href="https://github.com/">Code</a></li>
+  <li ><a class="active" href="#about" style="font-size:1.5em;">Search Legal AI</a></li>
+</ul>
+        
+</div>
+
+<br><br><br>
+<div>
+            <h2>Documents Retrieved</h2>
+                <h3> {{ text1 }} </h3>
+            	<h3>{{ text2 }} </h3>
+            	<h3>{{ det[0][0] }} </h3>
+            	<p>{{det[0][3]}} {{ det[0][1] }}</p>
+            	<h4>{{det[0][4]}}</h4><p>{{ det[0][2] }}</p>
+            	<br>
+            	<h3>{{ det[1][0] }} </h3>
+            	<p>{{det[1][3]}} {{ det[1][1] }}</p>
+            	<h4>{{det[1][4]}}</h4>
+            	<p>{{ det[1][2] }}</p>
+            	<br>
+            	<h3>{{ det[2][0] }} </h3>
+            	<p>{{det[2][3]}} {{ det[2][1] }}</p>
+            	<h4>{{det[2][4]}}</h4>
+            	<p>{{ det[2][2] }}</p>
+            	<br>
+            	<h3>{{ det[3][0] }}</h3>
+            	<p>{{det[3][3]}} {{ det[3][1] }}</p>
+            	<h4>{{det[3][4]}}</h4>
+            	<p>{{ det[3][2] }}</p>
+            	<br>
+            	<h3>{{ det[4][0] }} </h3>
+            	<p>{{det[4][3]}} {{ det[4][1] }}</p>
+            	<h4>{{det[4][4]}}</h4>
+            	<p>{{ det[4][2] }}</p>
+            	<br>
+            	<h3>{{ det[5][0] }} </h3>
+            	<p>{{det[5][3]}} {{ det[5][1] }}</p>
+            	<h4>{{det[5][4]}}</h4>
+            	<p>{{ det[5][2] }}</p>
+            	<br>
+            	<h3>{{ det[6][0] }}</h3>
+            	<p>{{det[6][3]}} {{ det[6][1] }}</p>
+            	<h4>{{det[6][4]}}</h4>
+            	<p>{{ det[6][2] }}</p>
+            	<br>
+            	<h3>{{ det[7][0] }}</h3>
+            	<p>{{det[7][3]}} {{ det[7][1] }}</p>
+            	<h4>{{det[7][4]}}</h4>
+            	<p>{{ det[7][2] }}</p>
+            	<br>
+            	<h3>{{ det[8][0] }}</h3>
+            	<p>{{det[8][3]}} {{ det[8][1] }}</p>
+            	<h4>{{det[8][4]}}</h4>
+            	<p>{{ det[8][2] }}</p>
+            	<br>
+            	<h3>{{ det[9][0] }}</h3>
+            	<p>{{det[9][3]}} {{ det[9][1] }}</p>
+            	<h4>{{det[9][4]}}</h4>
+            	<p>{{ det[9][2] }}</p>           
+            <br>
+            <br><br><br>
+          
+</div>         
+            <div class="flourish-embed flourish-hierarchy" style="text-align: center;margin-top:-5%;" data-src="visualisation/3446923" ><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+     
+<!-- {% endblock %}
+
+{% block script %}
+<script>
+  alert("Search Successful!");
+</script>
+{% endblock %}
