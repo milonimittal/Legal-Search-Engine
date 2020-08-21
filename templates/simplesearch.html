@@ -8,7 +8,7 @@
 
 <html lang="en">
 <head>
-    <title>Page Title</title>
+    <title>Search Legal AI</title>
 </head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,7 +55,40 @@ li a {
 }*/
 
 
+* {
+  box-sizing: border-box;
+}
 
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  padding: 20px;
+}
 }
 </style>
 <div class="header" id="myHeader"  style="color:white;">
@@ -70,7 +103,9 @@ li a {
 </div>
 
 <br><br><br>
-<div>
+
+<div class="row">
+          <div class="side">
             <h2>Documents Retrieved</h2>
                 <h3> {{ text1 }} </h3>
             	<h3>{{ text2 }} </h3>
@@ -121,13 +156,20 @@ li a {
             	<h3>{{ det[9][0] }}</h3>
             	<p>{{det[9][3]}} {{ det[9][1] }}</p>
             	<h4>{{det[9][4]}}</h4>
-            	<p>{{ det[9][2] }}</p>           
+            	<p>{{ det[9][2] }}</p> 
+          </div>
+          <div class="main">
+          <br><br><br>
+          <div class="flourish-embed flourish-hierarchy" style="text-align: center;margin-top:-5%;" data-src="visualisation/3446923"  data-width="100%" data-height="70%" ><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+     
+          </div>
+        </div>
+                      
             <br>
             <br><br><br>
           
-</div>         
-            <div class="flourish-embed flourish-hierarchy" style="text-align: center;margin-top:-5%;" data-src="visualisation/3446923" ><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-     
+       
+            
 <!-- {% endblock %}
 
 {% block script %}

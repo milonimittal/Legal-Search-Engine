@@ -18,7 +18,7 @@ def read_article(file_name):
         for j in a:
             if(len(j)>2):
                 article.append(j)
-                print(j)
+#                print(j)
     # print(article)
     sentences = []
 
@@ -94,7 +94,7 @@ def generate_summary(file_name, top_n=5):
     listToStr = listToStr.rstrip("\n") 
     listToStr=listToStr+"....."
     listToStr = listToStr.replace("\"", "")
-    print("Summarize Text: \n", listToStr)
+#    print("Summarize Text: \n", listToStr)
     return listToStr
 
 # let's begin

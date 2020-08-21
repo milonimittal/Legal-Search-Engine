@@ -119,7 +119,7 @@ def api_query():
        if (re.search(r'\d+', filename)):
            det.append(getdetails(filename))
    while(len(det)<10):
-       det.append((" "," "," "," "," "))
+       det.append(("","","","",""))
    
    
    return render_template("simplesearch.html",text1=text1,text2=text2,det=det)
