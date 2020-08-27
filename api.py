@@ -140,7 +140,10 @@ def api_docwise2():
     try:
         print("HERE1")
         if 'document' in request.args:
-                ret=retrieve_penalCodes(request.args.get('document', 0, type=str))
+                pc=retrieve_penalCodes(request.args.get('document', 0, type=str)+'.txt')
+                ret=[]
+                for ipc, codename in pc:
+                    ret.append(" "+codename+" "+ipc)
         else:
             return jsonify(result="Error: No document number provided. Please specify.")
         return jsonify(result=ret)
