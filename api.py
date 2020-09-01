@@ -9,6 +9,12 @@ from flask import Flask, send_file, render_template
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
+
+class DataStore():
+    det=[]
+data=DataStore()
+
+
 @app.route('/search1', methods=['GET'])
 def api_search1():
     return render_template("search1.html")
@@ -114,15 +120,17 @@ def api_query():
 #   det7=getdetails(fin[7])
 #   det8=getdetails(fin[8])
 #   det9=getdetails(fin[9])
-   det=[]
+   det2=[]
    for filename in fin:
        if (re.search(r'\d+', filename)):
-           det.append(getdetails(filename))
-   while(len(det)<10):
-       det.append(("","","","",""))
+           det2.append(getdetails(filename))
+   while(len(det2)<10):
+       det2.append(("","","","",""))
    
-   
-   return render_template("simplesearch.html",text1=text1,text2=text2,det=det)
+   data.det=det2
+#   print("SEARCH")
+#   print(data.det)
+   return render_template("simplesearch.html",text1=text1,text2=text2,det=det2)
 
 @app.route('/docwise')
 def api_docwise():
@@ -180,12 +188,42 @@ def api_all():
 @app.route('/download')
 def download_file():
 	if 'doc' in request.args:
+        
 		path = "Prior_Cases/"+request.args['doc']+'.txt'
 	else:
 		return "Enter document name."
 	#path = "sample.txt"
 	return send_file(path, as_attachment=True)
 
+
+@app.route('/download1')
+def download1_file():
+    if 'doc' in request.args:
+        if request.args['doc'] == "det00":
+            filename=data.det[0][0]
+        elif request.args['doc'] == "det10":
+            filename=data.det[1][0]
+        elif request.args['doc'] == "det20":
+            filename=data.det[2][0]
+        elif request.args['doc'] == "det30":
+            filename=data.det[3][0]
+        elif request.args['doc'] == "det40":
+            filename=data.det[4][0]
+        elif request.args['doc'] == "det50":
+            filename=data.det[5][0]
+        elif request.args['doc'] == "det60":
+            filename=data.det[6][0]
+        elif request.args['doc'] == "det70":
+            filename=data.det[7][0]
+        elif request.args['doc'] == "det80":
+            filename=data.det[8][0]
+        elif request.args['doc'] == "det90":
+            filename=data.det[9][0]
+        path = "Prior_Cases/"+filename
+    else:
+        return "Invalid Link"
+    	#path = "sample.txt"
+    return send_file(path, as_attachment=True)
 
 #@app.route('/response', methods=['POST'])
 #def response():
