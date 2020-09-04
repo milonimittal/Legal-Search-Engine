@@ -21,10 +21,13 @@ def date_check(line):
 def retrieve_firstdate(filename):
   if(filename=="No more Files"):
     return "-1"
-  start='Prior_Cases/'
-  f=open(start+filename,'r')
-  lines = f.read()
-  line=lines.splitlines()
+  start='Prior_Cases/prior_case_'
+  try:
+      f=open(start+filename+'.txt','r')
+      lines = f.read()
+      line=lines.splitlines()
+  except:
+      return "Error: Could not retrieve data for the specified document."
   return date_check(line[0])
 
 
@@ -115,10 +118,13 @@ def aj_check(lines):
 def retrieve_AppellateJurisdiction(filename):
   if(filename=="No more Files"):
     return "-1","-1"
-  start='Prior_Cases/'
-  f=open(start+filename,'r')
-  lines = f.read()
-  appellate_jurisdiction, appeal_no = aj_check(lines)
+  start='Prior_Cases/prior_case_'
+  try:
+      f=open(start+filename+'.txt','r')
+      lines = f.read()
+      appellate_jurisdiction, appeal_no = aj_check(lines)
+  except:
+      return None, None
   return appellate_jurisdiction, appeal_no
 
 
@@ -351,10 +357,13 @@ def final_judgement(lines):
   return lines2[-5] + ". " + lines2[-4]+ ". " + lines2[-3]+ ". " + lines2[-2]
 
 def retrieve_finalJudgement(filename):
-  start='Prior_Cases/'
-  f=open(start+filename+'.txt','r')
-  lines = f.read()
-  judgement=final_judgement(lines)
+  start='Prior_Cases/prior_case_'
+  try:
+      f=open(start+filename+'.txt','r')
+      lines = f.read()
+      judgement=final_judgement(lines)
+  except:
+      judgement="Error: Could not retrieve data for the specified document."
   return judgement
 
 
@@ -417,10 +426,13 @@ def ipc_cpc_check(lines):
 
 
 def retrieve_penalCodes(filename):
-  start='Prior_Cases/'
-  f=open(start+filename,'r')
-  lines = f.read()
-  codes = ipc_cpc_check(lines)
+  start='Prior_Cases/prior_case_'
+  try:
+      f=open(start+filename+'.txt','r')
+      lines = f.read()
+      codes = ipc_cpc_check(lines)
+  except:
+      return None
   
   return codes
 
@@ -483,6 +495,8 @@ def getchapter(ipcno):
 def retrieve_ipcs(filename):
     newfile=[]
     pc=retrieve_penalCodes(filename)
+    if pc is None:
+        return None
     for ipc, codename in pc:
       if codename == 'Indian Penal Code':
           newfile.append(ipc)
@@ -490,4 +504,3 @@ def retrieve_ipcs(filename):
         return None
     return newfile
     
-
