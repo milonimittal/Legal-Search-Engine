@@ -1,4 +1,5 @@
 import flask
+import re
 from flask import request, jsonify
 from test_queries import *
 from netapp_test2 import *
@@ -18,30 +19,22 @@ data=DataStore()
 @app.route('/search1', methods=['GET'])
 def api_search1():
     return render_template("search1.html")
+
+
 @app.route('/about1', methods=['GET'])
 def api_aboutus():
     return render_template("aboutus.html")
+
+
 @app.route('/', methods=['GET'])
 def home():
-    #    return '''<h1>NetApp</h1>
-#<p>Retrieval of legal docs.</p>'''
     return render_template('frontpage.html')
-    # return '''<h1><center>turingTonks</center></h1>'''
+
 
 @app.route('/askquery', methods=['GET'])
 def api_query():
    text1=""
    text2=""
-   text3=""
-   text4=""
-   text5=""
-   text6=""
-   text7=""
-   text8=""
-   text9=""
-   text10=""
-   text11=""
-   text12=""
    if 'query' in request.args:
        ret=test_query(request.args['query'])
        fin=[]
@@ -75,62 +68,19 @@ def api_query():
            text1= "No relevant document found."
    else:
        text2= "Error: No query provided. Please specify query."
-   ct=0
    cleanlist=[]
    [cleanlist.append(x) for x in fin if x not in cleanlist]   
    fin=cleanlist 
 
-#   if(ct<len(fin)):
-#       text3=fin[0]
-#   ct=ct+1
-#   if(ct<len(fin)):
-#       text4=fin[1]
-#   ct=ct+1
-#   if(ct<len(fin)):
-#       text5=fin[2]
-#   ct=ct+1
-#   if(ct<len(fin)):
-#       text6=fin[3]
-#   ct=ct+1
-#   if(ct<len(fin)):
-#       text7=fin[4]
-#   ct=ct+1
-#   if(ct<len(fin)):
-#       text8=fin[5]
-#   ct=ct+1
-#   if(ct<len(fin)):
-#       text9=fin[6]
-#   ct=ct+1
-#   if(ct<len(fin)):
-#       text10=fin[7]
-#   ct=ct+1
-#   if(ct<len(fin)):
-#       text11=fin[8]
-#   ct=ct+1
-#   if(ct<len(fin)):
-#       text12=fin[9]
-#   ct=ct+1
-#   det0=getdetails(fin[0])
-#   det1=getdetails(fin[1])
-#   det2=getdetails(fin[2])
-#   det3=getdetails(fin[3])
-#   det4=getdetails(fin[4])
-#   det5=getdetails(fin[5])
-#   det6=getdetails(fin[6])
-#   det7=getdetails(fin[7])
-#   det8=getdetails(fin[8])
-#   det9=getdetails(fin[9])
    det2=[]
    for filename in fin:
        if (re.search(r'\d+', filename)):
            det2.append(getdetails(filename))
    while(len(det2)<10):
        det2.append(("","","","",""))
-   
    data.det=det2
-#   print("SEARCH")
-#   print(data.det)
    return render_template("simplesearch.html",text1=text1,text2=text2,det=det2)
+
 
 @app.route('/docwise')
 def api_docwise():
@@ -143,6 +93,8 @@ def api_docwise():
         return jsonify(result=ret)
     except Exception as e:
         return str(e)  
+    
+    
 @app.route('/docwise2')
 def api_docwise2():
     try:
@@ -157,6 +109,8 @@ def api_docwise2():
         return jsonify(result=ret)
     except Exception as e:
         return str(e)  
+    
+    
 @app.route('/docwise3')
 def api_docwise3():
     try:
@@ -168,6 +122,8 @@ def api_docwise3():
         return jsonify(result=ret)
     except Exception as e:
         return str(e)  
+    
+    
 @app.route('/docwise4')
 def api_docwise4():
     try:
@@ -180,11 +136,6 @@ def api_docwise4():
     except Exception as e:
         return str(e)  
 
-# @app.route('/alldocs', methods=['GET'])
-# def api_all():
-#     ret=all_docs();
-#     # return jsonify(ret)
-#     return render_template("alldocs.html",ret=ret)
 
 @app.route('/download')
 def download_file():
@@ -193,7 +144,6 @@ def download_file():
 		path = "Prior_Cases/"+request.args['doc']+'.txt'
 	else:
 		return "Enter document name."
-	#path = "sample.txt"
 	return send_file(path, as_attachment=True)
 
 
@@ -223,14 +173,8 @@ def download1_file():
         path = "Prior_Cases/"+filename
     else:
         return "Invalid Link"
-    	#path = "sample.txt"
     return send_file(path, as_attachment=True)
 
-#@app.route('/response', methods=['POST'])
-#def response():
-#    fname = request.form.get("fname")
-#    note = request.form.get("note")
-#    return render_template("index.html", name=fname, note=note)
 
 @app.route('/background_process')
 def background_process():
@@ -265,21 +209,17 @@ def background_process():
                     flag=1
             if flag!=1:
                 fin=ret
-#            if len(fin)==0:
-#                text1= "No relevant document found."
         else:
             fin.append( "Error: No query provided. Please specify query.")
-        ct=0
         cleanlist=[]
         [cleanlist.append(x) for x in fin if x not in cleanlist]   
         fin=cleanlist 
-#        print(fin)
         for i in range (len(fin),10):
             fin.append(" ")
-#        print(fin)
         return jsonify(result = fin)
     except Exception as e:
         return str(e)
+
 
 app.run()
 

@@ -15,7 +15,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import math
 
 
-#change the files to the root
+
 files=os.listdir('./fire2017data')
 files.sort() 
 files.remove('prior_case_1157 (1).txt')
@@ -47,7 +47,6 @@ norm=[0]*N
 tf_raw_arr=tf_raw.toarray()
 ct=0;
 posting_list = {i: [] for i in vectorizer.vocabulary_} 
-#print(listKeys)
 for j in posting_list:
     ct=0
     for i in tf_raw_arr:

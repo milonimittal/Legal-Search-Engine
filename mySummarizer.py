@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 from nltk.corpus import stopwords
 from nltk.cluster.util import cosine_distance
 import numpy as np
@@ -10,20 +7,15 @@ def read_article(file_name):
     start='Prior_Cases/'
     file = open(start+file_name, "r")
     filedata = file.readlines()
-    # print(filedata)
     article=[]
     for i in filedata:
         a = i.split(". ")
-        # print(a)
         for j in a:
             if(len(j)>2):
                 article.append(j)
-#                print(j)
-    # print(article)
     sentences = []
 
     for sentence in article:
-        # print(sentence)
         sentences.append(sentence.replace("[^a-zA-Z]", " ").split(" "))
     sentences.pop() 
     
@@ -83,8 +75,7 @@ def generate_summary(file_name, top_n=5):
     scores = nx.pagerank(sentence_similarity_graph)
 
     # Step 4 - Sort the rank and pick top sentences
-    ranked_sentence = sorted(((scores[i],s) for i,s in enumerate(sentences)), reverse=True)    
-    # print("Indexes of top ranked_sentence order are ", ranked_sentence)    
+    ranked_sentence = sorted(((scores[i],s) for i,s in enumerate(sentences)), reverse=True)     
 
     for i in range(top_n):
       summarize_text.append(" ".join(ranked_sentence[i][1]))
@@ -94,8 +85,6 @@ def generate_summary(file_name, top_n=5):
     listToStr = listToStr.rstrip("\n") 
     listToStr=listToStr+"....."
     listToStr = listToStr.replace("\"", "")
-#    print("Summarize Text: \n", listToStr)
     return listToStr
 
-# let's begin
-#generate_summary( "prior_case_0042.txt", 2)
+
