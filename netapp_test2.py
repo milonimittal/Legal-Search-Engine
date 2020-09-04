@@ -27,7 +27,7 @@ def retrieve_firstdate(filename):
       lines = f.read()
       line=lines.splitlines()
   except:
-      return "Error: Could not retrieve data for the specified document."
+      return None
   return date_check(line[0])
 
 
@@ -363,7 +363,7 @@ def retrieve_finalJudgement(filename):
       lines = f.read()
       judgement=final_judgement(lines)
   except:
-      judgement="Error: Could not retrieve data for the specified document."
+      judgement=None
   return judgement
 
 
@@ -504,3 +504,4 @@ def retrieve_ipcs(filename):
         return None
     return newfile
     
+
