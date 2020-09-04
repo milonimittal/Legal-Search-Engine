@@ -3,7 +3,7 @@ from netapp_test2 import *
 from mySummarizer import *
 import re
 
-def getdetails(filename, count):
+def getdetails(filename, count_file):
     details=[]
     match=re.search(r'\d+', filename)
     name="Case #"+match.group()
@@ -30,5 +30,5 @@ def getdetails(filename, count):
     details.append("Indian Penal Codes: ")
     details.append("Summary:")
     details.append(filename)
-    details.append(str(count)+". ")
+    details.append(str(count_file)+". ")
     return details
