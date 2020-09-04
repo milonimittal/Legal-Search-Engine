@@ -7,8 +7,9 @@ def getdetails(filename, count_file):
     details=[]
     match=re.search(r'\d+', filename)
     name="Case #"+match.group()
+    file=match.group()
     details.append(name)
-    ipcs=retrieve_ipcs(filename)
+    ipcs=retrieve_ipcs(file)
     if (ipcs is None):
        details.append("No IPCs in this file")
     else:
@@ -25,7 +26,6 @@ def getdetails(filename, count_file):
     if summary is not None:
         details.append(summary)
     else:
-        file="prior_case_"+match.group()
         details.append(retrieve_finalJudgement(file))
     details.append("Indian Penal Codes: ")
     details.append("Summary:")
