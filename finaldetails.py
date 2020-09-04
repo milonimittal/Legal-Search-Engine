@@ -30,5 +30,5 @@ def getdetails(filename, count):
     details.append("Indian Penal Codes: ")
     details.append("Summary:")
     details.append(filename)
-    details.append(name+".")
+    details.append(str(count)+". ")
     return details
