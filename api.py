@@ -78,18 +78,18 @@ def api_query():
        if (re.search(r'\d+', filename)):
            det2.append(getdetails(filename,count_file))
            count_file+=1
+           
    while(len(det2)<10):
        det2.append(("","","","","","",""))
    data.det=det2
-   return render_template("simplesearch.html",text1=text1,text2=text2,det=det2,query=request.args['query'])
+   return render_template("simplesearch.html",text1=text1,text2=text2,det=det2)
 
 
 @app.route('/docwise')
 def api_docwise():
     try:
-        print("HERE1")
         if 'document' in request.args:
-                ret=retrieve_finalJudgement(request.args.get('document', 0, type=str))
+                ret=retrieve_finalJudgement((request.args.get('document', 0, type=str)).zfill(4))
         else:
             return jsonify(result="Error: No document number provided. Please specify.")
         return jsonify(result=ret)
@@ -100,14 +100,20 @@ def api_docwise():
 @app.route('/docwise2')
 def api_docwise2():
     try:
-        print("HERE1")
         if 'document' in request.args:
-                pc=retrieve_penalCodes(request.args.get('document', 0, type=str)+'.txt')
+                pc=retrieve_penalCodes((request.args.get('document', 0, type=str)).zfill(4))
                 ret=[]
+                if pc is None:
+                    return jsonify(result="Error: Could not retrieve data for the specified document.")
                 for ipc, codename in pc:
                     ret.append(" "+codename+" "+ipc)
+                if len(ret) is 0:
+                    return jsonify(result="There are no Penal Codes in this document.")
+                
         else:
             return jsonify(result="Error: No document number provided. Please specify.")
+        if len(ret) is 0:
+            return jsonify(result="There are no Penal Codes in this document.")
         return jsonify(result=ret)
     except Exception as e:
         return str(e)  
@@ -116,9 +122,8 @@ def api_docwise2():
 @app.route('/docwise3')
 def api_docwise3():
     try:
-        print("HEREDate")
         if 'document' in request.args:
-            ret=retrieve_firstdate(request.args.get('document', 0, type=str)+'.txt')
+            ret=retrieve_firstdate((request.args.get('document', 0, type=str)).zfill(4))
         else:
             return jsonify(result="Error: No document number provided. Please specify.")
         return jsonify(result=ret)
@@ -129,9 +134,10 @@ def api_docwise3():
 @app.route('/docwise4')
 def api_docwise4():
     try:
-        print("HERE1")
         if 'document' in request.args:
-                ret=retrieve_AppellateJurisdiction(request.args.get('document', 0, type=str)+'.txt')
+                ret=retrieve_AppellateJurisdiction((request.args.get('document', 0, type=str)).zfill(4))
+                if ret[0] is None:
+                    return jsonify(result="This document does not contain an appellate jurisdiction.")
         else:
             return jsonify(result="Error: No document number provided. Please specify.")
         return jsonify(result=ret)
@@ -224,8 +230,6 @@ def background_process():
 
 
 app.run()
-
-
 
 
 
