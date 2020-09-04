@@ -180,10 +180,11 @@ def api_docwise4():
     except Exception as e:
         return str(e)  
 
-@app.route('/alldocs', methods=['GET'])
-def api_all():
-    ret=all_docs();
-    return jsonify(ret)
+# @app.route('/alldocs', methods=['GET'])
+# def api_all():
+#     ret=all_docs();
+#     # return jsonify(ret)
+#     return render_template("alldocs.html",ret=ret)
 
 @app.route('/download')
 def download_file():

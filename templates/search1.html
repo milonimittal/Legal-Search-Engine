@@ -3,6 +3,7 @@
 <head>
     <title>Search Legal AI</title>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/searchcss.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <style>
 ul {
@@ -51,10 +52,10 @@ li a {
 <div class="header" id="myHeader"  style="color:white;">
         
           <ul>
-  <li style="float:right; font-size:1.25em; "><a href="/?">Home</a></li>
-  <li style="float:right; font-size:1.25em;"><a href="about1?">About Us</a></li>
-  <li style="float:right; font-size:1.25em;"><a href="https://github.com/milonimittal/Legal-Search-Engine">Code</a></li>
-  <li ><a class="active" href="#about" style="font-size:1.5em;">Search Legal AI</a></li>
+<li style="float:right; font-size:1.25em; font-family: 'Poppins', sans-serif;"><a href="/?">Home</a></li>
+  <li style="float:right; font-size:1.25em;font-family: 'Poppins', sans-serif;"><a href="about1?">About Us</a></li>
+  <li style="float:right; font-size:1.25em;font-family: 'Poppins', sans-serif;"><a href="https://github.com/milonimittal/Legal-Search-Engine">Code</a></li>
+  <li ><a class="active" href="#about" style="font-size:1.5em;font-family: 'Abril Fatface', cursive;">Just-Justice</a></li>
 </ul>
         
         </div>
@@ -66,7 +67,7 @@ li a {
 
 {% block body %}
 	<head>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script type=text/javascript>
 			$(function() {
 			  $('a#process_input').bind('click', function() {
@@ -91,14 +92,14 @@ li a {
 				return false;
 			  });
 			 });
-		</script>
+		</script> -->
 	</head>
   
 	<body>
     
 <div class ="filter" style="text-align: center;">
     
-    <form class="example" action="askquery?query=murder&" method="get" style="margin-right:10%; " >
+    <form class="example" action="askquery?query=" method="get" style="margin-right:10%; " >
         <head>
             <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/searchcss.css') }}">
         </head>
@@ -120,7 +121,7 @@ li a {
         <!-- <br> -->
         <a href=# id=process_input><button type="submit" class="submitbutton" style="background-color:black; width:30%; height:6%; font-size:80%; border-color:black; margin-right:30%;"><i class="fa fa-search"></i></button> </a>
     </form>
-        <p id=result1></p>
+        <!-- <p id=result1></p>
         <p id=result2></p>
         <p id=result3></p>
         <p id=result4></p>
@@ -129,7 +130,7 @@ li a {
         <p id=result7></p>
         <p id=result8></p>
         <p id=result9></p>
-        <p id=result10></p>
+        <p id=result10></p> -->
         
         
         </div>
@@ -151,7 +152,7 @@ li a {
         </button>  
     </form>
 
-
+<!-- 
     <form class="example" action="alldocs" method="get" style="margin-right:10%;">
         <head>
             <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/searchcss.css') }}">
@@ -162,7 +163,7 @@ li a {
         <button type="submit" class="submitbutton" style="background-color:black; width:30%; height: 6%;border-color:black;font-size: 80%;margin-right:30%;" >
             See List of Documents
         </button>  
-    </form>
+    </form> -->
 
 <br>
 </div>
