@@ -73,9 +73,11 @@ def api_query():
    fin=cleanlist 
 
    det2=[]
+   count=1
    for filename in fin:
        if (re.search(r'\d+', filename)):
-           det2.append(getdetails(filename))
+           det2.append(getdetails(filename,count))
+           count+=1
    while(len(det2)<10):
        det2.append(("","","","",""))
    data.det=det2
@@ -151,25 +153,25 @@ def download_file():
 def download1_file():
     if 'doc' in request.args:
         if request.args['doc'] == "det00":
-            filename=data.det[0][0]
+            filename=data.det[0][5]
         elif request.args['doc'] == "det10":
-            filename=data.det[1][0]
+            filename=data.det[1][5]
         elif request.args['doc'] == "det20":
-            filename=data.det[2][0]
+            filename=data.det[2][5]
         elif request.args['doc'] == "det30":
-            filename=data.det[3][0]
+            filename=data.det[3][5]
         elif request.args['doc'] == "det40":
-            filename=data.det[4][0]
+            filename=data.det[4][5]
         elif request.args['doc'] == "det50":
-            filename=data.det[5][0]
+            filename=data.det[5][5]
         elif request.args['doc'] == "det60":
-            filename=data.det[6][0]
+            filename=data.det[6][5]
         elif request.args['doc'] == "det70":
-            filename=data.det[7][0]
+            filename=data.det[7][5]
         elif request.args['doc'] == "det80":
-            filename=data.det[8][0]
+            filename=data.det[8][5]
         elif request.args['doc'] == "det90":
-            filename=data.det[9][0]
+            filename=data.det[9][5]
         path = "Prior_Cases/"+filename
     else:
         return "Invalid Link"

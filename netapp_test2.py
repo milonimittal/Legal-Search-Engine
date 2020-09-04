@@ -347,8 +347,8 @@ def retrieve_orderAsToCosts(filename):
 """Retrieve final judgement"""
 
 def final_judgement(lines):
-  lines2=lines.splitlines()
-  return lines2[-3] + " " + lines2[-2]
+  lines2=lines.split(". ")
+  return lines2[-5] + ". " + lines2[-4]+ ". " + lines2[-3]+ ". " + lines2[-2]
 
 def retrieve_finalJudgement(filename):
   start='Prior_Cases/'

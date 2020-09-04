@@ -69,22 +69,25 @@ def generate_summary(file_name, top_n=5):
 
     # Step 2 - Generate Similary Martix across sentences
     sentence_similarity_martix = build_similarity_matrix(sentences, stop_words)
-
+    
+    try:
     # Step 3 - Rank sentences in similarity martix
-    sentence_similarity_graph = nx.from_numpy_array(sentence_similarity_martix)
-    scores = nx.pagerank(sentence_similarity_graph)
-
-    # Step 4 - Sort the rank and pick top sentences
-    ranked_sentence = sorted(((scores[i],s) for i,s in enumerate(sentences)), reverse=True)     
-
-    for i in range(top_n):
-      summarize_text.append(" ".join(ranked_sentence[i][1]))
-
-    # Step 5 - Offcourse, output the summarize texr
-    listToStr = '. '.join([str(elem) for elem in summarize_text])
-    listToStr = listToStr.rstrip("\n") 
-    listToStr=listToStr+"....."
-    listToStr = listToStr.replace("\"", "")
+        sentence_similarity_graph = nx.from_numpy_array(sentence_similarity_martix)
+        scores = nx.pagerank(sentence_similarity_graph)
+    
+        # Step 4 - Sort the rank and pick top sentences
+        ranked_sentence = sorted(((scores[i],s) for i,s in enumerate(sentences)), reverse=True)    
+        # print("Indexes of top ranked_sentence order are ", ranked_sentence)    
+    
+        for i in range(top_n):
+          summarize_text.append(" ".join(ranked_sentence[i][1]))
+    
+        # Step 5 - Offcourse, output the summarize texr
+        listToStr = '. '.join([str(elem) for elem in summarize_text])
+        listToStr = listToStr.rstrip("\n") 
+        listToStr=listToStr+"....."
+        listToStr = listToStr.replace("\"", "")
+    except:
+        listToStr=None
+#    print("Summarize Text: \n", listToStr)
     return listToStr
-
-
