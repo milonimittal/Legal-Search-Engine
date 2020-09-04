@@ -90,6 +90,8 @@ def api_docwise():
     try:
         if 'document' in request.args:
                 ret=retrieve_finalJudgement((request.args.get('document', 0, type=str)).zfill(4))
+                if ret is None:
+                    return jsonify(result="Error: Could not retrieve data for the specified document.")
         else:
             return jsonify(result="Error: No document number provided. Please specify.")
         return jsonify(result=ret)
@@ -124,6 +126,8 @@ def api_docwise3():
     try:
         if 'document' in request.args:
             ret=retrieve_firstdate((request.args.get('document', 0, type=str)).zfill(4))
+            if ret is None:
+                return jsonify(result="Error: Could not retrieve data for the specified document.")
         else:
             return jsonify(result="Error: No document number provided. Please specify.")
         return jsonify(result=ret)
@@ -230,8 +234,3 @@ def background_process():
 
 
 app.run()
-
-
-
-
-
