@@ -79,7 +79,7 @@ def api_query():
            det2.append(getdetails(filename,count))
            count+=1
    while(len(det2)<10):
-       det2.append(("","","","",""))
+       det2.append(("","","","","","",""))
    data.det=det2
    return render_template("simplesearch.html",text1=text1,text2=text2,det=det2)
 
