@@ -73,11 +73,11 @@ def api_query():
    fin=cleanlist 
 
    det2=[]
-   count=1
+   count_file=1
    for filename in fin:
        if (re.search(r'\d+', filename)):
-           det2.append(getdetails(filename,count))
-           count+=1
+           det2.append(getdetails(filename,count_file))
+           count_file+=1
    while(len(det2)<10):
        det2.append(("","","","","","",""))
    data.det=det2
