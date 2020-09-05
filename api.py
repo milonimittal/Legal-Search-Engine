@@ -152,8 +152,8 @@ def api_docwise4():
 @app.route('/download')
 def download_file():
 	if 'doc' in request.args:
-        
-		path = "Prior_Cases/"+request.args['doc']+'.txt'
+        	fileno=request.args['doc'].zfill(4)
+		path = "Prior_Cases/prior_case_"+fileno+'.txt'
 	else:
 		return "Enter document name."
 	return send_file(path, as_attachment=True)
