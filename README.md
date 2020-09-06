@@ -24,10 +24,10 @@ Run http://127.0.0.1:5000/ on your web browser.
 
 # Links to the details
 
-Alternative link for dataset:
+- Alternative link for dataset:
 https://drive.google.com/drive/folders/16-kGqOEBppr1hOQ2l7TkU2vTrvkpr9Fh?usp=sharing
-Document Describing the Project
+- Document Describing the Project
 https://docs.google.com/document/d/1MBZqOisDTiiMuO47uPI4mjBiuAk1AQND3fvP1FB2l8s/edit?usp=sharing
-Presentation explaining the project
+- Presentation explaining the project
 https://docs.google.com/presentation/d/1rRnhoRlBUsZAuftL2CYCsVZ_EA1pTHzvloFZPLHLPMU/edit?usp=sharing
-Video Demo Link
+- Video Demo Link
