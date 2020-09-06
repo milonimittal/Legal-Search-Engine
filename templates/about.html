@@ -1,0 +1,201 @@
+
+<html>
+<head>
+    <title>Just-Justice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/searchcss.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body 
+    {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    html 
+    {
+      box-sizing: border-box;
+    }
+
+    *, *:before, *:after 
+    {
+      box-sizing: inherit;
+    }
+
+    .column 
+    {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    .card 
+    {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .about-section 
+    {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+
+    .container 
+    {
+      padding: 0 16px;
+    }
+
+    .container::after, .row::after 
+    {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title 
+    {
+      color: grey;
+    }
+
+    .button 
+    {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover 
+    {
+      background-color: #555;
+    }
+
+    @media screen and (max-width: 650px) 
+    {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    ul 
+    {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .header 
+    {
+      background-color:black;
+      position: fixed;
+      top:0;
+      left: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 10%;
+      box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    }
+
+    li 
+    {
+      float: left;
+    }
+
+    li a 
+    {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+</style>
+
+<div class="header" id="myHeader"  style="color:white;">
+    <ul>
+        <li style="float:right; font-size:1.25em; font-family: 'Poppins', sans-serif;"><a href="/?">Home</a></li>
+        <li style="float:right; font-size:1.25em;font-family: 'Poppins', sans-serif;"><a href="about?">About</a></li>
+        <li style="float:right; font-size:1.25em;font-family: 'Poppins', sans-serif;"><a href="https://github.com/milonimittal/Legal-Search-Engine" target="_blank">Code</a></li>
+        <li ><a class="active" href="#about" style="font-size:1.5em;font-family: 'Abril Fatface', cursive;">Just-Justice</a></li>
+    </ul>
+        
+</div>
+<div class="about-section">
+    <h1 style="font-family: 'Abril Fatface', cursive;">About Us</h1>
+    <p style="font-family: 'Poppins', sans-serif;">We are a group of Natural Language Processing Enthusiasts from Birla Institute of Technology and Science Pilani, Pilani Campus</p>
+    <p style="font-family: 'Poppins', sans-serif;">Go ahead to find out details of our team members.</p>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="./static/img/Asrita.jpeg" alt="Asrita" style="width:100%">
+      <div class="container">
+          <h2 style="font-family: 'Abril Fatface', cursive;">Asrita V Mandalam</h2>
+          <p align="left">
+            <a href="https://in.linkedin.com/in/asritavm" target="_blank"><img align="center" width="30px" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" /></a>
+            <a href="https://github.com/avmand" target="_blank"><img align="center" width="30px" src="https://www.vectorlogo.zone/logos/github/github-icon.svg" /></a> 
+            <a href="mailto:f20171179@pilani.bits-pilani.ac.in" target="_blank"><img align="center" width="30px" src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" /></a>
+          </p>
+
+          <p style="font-family: 'Poppins', sans-serif;">BITS Pilani, Pilani Campus</p>
+          <p style="font-family: 'Poppins', sans-serif;">B.E.(Hons.) Computer Science, Minor in Finance</p>
+          <p style="font-family: 'Poppins', sans-serif;">f20171179@pilani.bits-pilani.ac.in</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="./static/img/Miloni.jpg" alt="Miloni" style="width:100%">
+      <div class="container">
+          <h2 style="font-family: 'Abril Fatface', cursive;">Miloni Mittal</h2>
+          <p align="left">
+            <a href="https://www.linkedin.com/in/miloni-mittal-225779149/" target="_blank"><img align="center" width="30px" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" /></a>
+            <a href="https://github.com/milonimittal" target="_blank"><img align="center" width="30px" src="https://www.vectorlogo.zone/logos/github/github-icon.svg" /></a> 
+            <a href="mailto:f20170243@pilani.bits-pilani.ac.in" target="_blank"><img align="center"  width="30px" src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" /></a>
+          </p>
+
+          <p style="font-family: 'Poppins', sans-serif;">BITS Pilani, Pilani Campus</p>
+          <p style="font-family: 'Poppins', sans-serif;">B.E.(Hons.) Electrical & Electronics, Minor in Data Science</p>
+          <p style="font-family: 'Poppins', sans-serif;">f20170243@pilani.bits-pilani.ac.in</p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="./static/img/Simran.jpeg" alt="Simran" style="width:100%">
+      <div class="container">
+          <h2 style="font-family: 'Abril Fatface', cursive;">Simran Sehgal</h2>
+          <p align="left">
+            <a href="https://in.linkedin.com/in/sehgal-simran" target="_blank"><img align="center" width="30px" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" /></a>
+            <a href="https://github.com/sehgal-simran" target="_blank"><img align="center" width="30px" src="https://www.vectorlogo.zone/logos/github/github-icon.svg" /></a> 
+            <a href="mailto:f20170405@pilani.bits-pilani.ac.in" target="_blank"><img align="center"  width="30px" src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" /></a>
+          </p>
+
+          <p style="font-family: 'Poppins', sans-serif;">BITS Pilani, Pilani Campus</p>
+          <p style="font-family: 'Poppins', sans-serif;">B.E.(Hons.) Electronics & Instrumentation, Minor in Data Science</p>
+          <p style="font-family: 'Poppins', sans-serif;">f20170405@pilani.bits-pilani.ac.in</p>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+</html>

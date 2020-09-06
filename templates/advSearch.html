@@ -1,0 +1,161 @@
+<html>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <title>Just-Justice</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/searchcss.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    ul 
+    {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .header 
+    {
+      background-color:black;
+      position: fixed;
+      top:0;
+      left: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 10%;
+      box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    }
+
+    li 
+    {
+      float: left;
+    }
+
+    li a 
+    {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  </style>
+  <div class="header" id="myHeader"  style="color:white;">
+      <ul>
+        <li style="float:right; font-size:1.25em; font-family: 'Poppins', sans-serif;"><a href="/?">Home</a></li>
+        <li style="float:right; font-size:1.25em;font-family: 'Poppins', sans-serif;"><a href="about?">About</a></li>
+        <li style="float:right; font-size:1.25em;font-family: 'Poppins', sans-serif;" target="_blank"><a href="https://github.com/milonimittal/Legal-Search-Engine">Code</a></li>
+        <li ><a class="active" href="#about" style="font-size:1.5em;font-family: 'Abril Fatface', cursive;">Just-Justice</a></li>
+      </ul>
+        
+  </div>
+
+
+   <div class="flourish-embed flourish-network" style="text-align: center;margin-top:-5%;" data-src="visualisation/3443909" data-url="https://flo.uri.sh/visualisation/3443909/embed" data-width="100%" data-height="80%" ><script src="https://public.flourish.studio/resources/embed.js"></script></div> 
+
+  <div class ="filter" style="text-align: center;">
+    <form class="example" action="askquery?query=" method="get" style="margin-right:10%; " >      
+        <input type="text" placeholder="Enter Query" name="query" style="width:90%; height: 6%; border-color: lightgrey;font-size: 80%;">
+
+        <br>
+        <br>
+      
+        <input type="text" placeholder="Search by Date" name="date" style="width:30%; height:6%; border-color: lightgrey;font-size:80%;">
+        
+        <input type="text" placeholder="Search by Appeal No." name="appeal_no" style="width:30%; height:6%; border-color: lightgrey; font-size:80%;">
+    
+        <input type="text" placeholder="Search by Appellate" name="appellate" style="width:30%; height:6%; border-color:lightgrey; font-size:80%;">
+
+        <br>
+        <br>
+
+        <a href=# id=process_input><button type="submit" class="submitbutton" style="background-color:black; width:30%; height:6%; font-size:80%; border-color:black; margin-right:30%;"><i class="fa fa-search"></i></button> </a>
+    </form>   
+  </div>
+
+
+    <div class ="filter" style="text-align: center;">      
+        <form class="example" action="download?" method="get" style="margin-right:10%; " >
+           
+            <br>
+
+            <input type="text" placeholder="Enter the name of document to download it" name="doc" style="width:90%; height: 6%;border-color: black; font-size:80%;">
+
+            <br>
+            <br>
+
+            <button type="submit" class="submitbutton" style="background-color:black; width:30%; height:6%; border-color:black; font-size:80%; margin-right:30%;">
+                Download
+            </button>  
+
+        </form>
+
+    <br>
+
+    </div>
+</html>
+
+{% block bag %}
+	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type=text/javascript>
+			 $(function() {
+			  $('a#process_input2').bind('click', function() {
+				$.getJSON('/docwise', {
+    			  document: $('input[name="document"]').val(),
+				}, function(data) {
+				  $("#result").text(data.result);
+				   
+				});
+				return false;
+			  });
+			  $('a#process_input3').bind('click', function() {
+				$.getJSON('/docwise2', {
+    			  document: $('input[name="document"]').val(),
+				}, function(data) {
+				  $("#result").text(data.result);
+				   
+				});
+				return false;
+			  });
+			  $('a#process_input4').bind('click', function() {
+				$.getJSON('/docwise3', {
+    			  document: $('input[name="document"]').val(),
+				}, function(data) {
+				  $("#result").text(data.result);
+				   
+				});
+				return false;
+			  });
+			  $('a#process_input5').bind('click', function() {
+				$.getJSON('/docwise4', {
+    			  document: $('input[name="document"]').val(),
+				}, function(data) {
+				  $("#result").text(data.result);
+				   
+				});
+				return false;
+			  });
+			});
+		</script>
+	</head>
+  
+    
+  <div class ="filter2" style="text-align: center;">    
+    <form class="example" action="docwise?" method="get" style="margin-right:10%;" >
+
+        <input type=text name=document placeholder="Enter the name of document" style="width:90%; height:6%; border-color: lightgrey; font-size: 80%;">
+        <br>
+        <br>
+        
+        <a href=# id=process_input2><button type="submit" class="submitbutton" style="background-color:black; width:22.5%; height:6%; border-color:white; font-size:80%;">Judgement</button></a>
+        <a href=# id=process_input3><button type="submit" class="submitbutton" style="background-color:black; width:22.5%; height:6%; border-color:white; font-size:80%;">Penal Code</button></a>
+        <a href=# id=process_input4><button type="submit" class="submitbutton" style="background-color:black; width:22.5%; height:6%; border-color:white; font-size:80%;">Date</button></a>
+        <a href=# id=process_input5><button type="submit" class="submitbutton" style="background-color:black; width:22.5%; height:6%; border-color:white; font-size:80%;">Appellate</button></a>
+    
+    </form>
+        <p id=result></p>
+  </div>
+</html>
+{% endblock %}

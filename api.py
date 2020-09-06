@@ -16,19 +16,19 @@ class DataStore():
 data=DataStore()
 
 
-@app.route('/search1', methods=['GET'])
+@app.route('/advSearch', methods=['GET'])
 def api_search1():
-    return render_template("search1.html")
+    return render_template("advSearch.html")
 
 
-@app.route('/about1', methods=['GET'])
-def api_aboutus():
-    return render_template("aboutus.html")
+@app.route('/about', methods=['GET'])
+def api_about():
+    return render_template("about.html")
 
 
 @app.route('/', methods=['GET'])
-def home():
-    return render_template('frontpage.html')
+def api_home():
+    return render_template('home.html')
 
 
 @app.route('/askquery', methods=['GET'])
@@ -82,7 +82,7 @@ def api_query():
    while(len(det2)<10):
        det2.append(("","","","","","",""))
    data.det=det2
-   return render_template("simplesearch.html",text1=text1,text2=text2,det=det2)
+   return render_template("searchResults.html",text1=text1,text2=text2,det=det2)
 
 
 @app.route('/docwise')
@@ -151,12 +151,12 @@ def api_docwise4():
 
 @app.route('/download')
 def download_file():
-	if 'doc' in request.args:
-        	fileno=request.args['doc'].zfill(4)
-		path = "Prior_Cases/prior_case_"+fileno+'.txt'
-	else:
-		return "Enter document name."
-	return send_file(path, as_attachment=True)
+  if 'doc' in request.args:
+    fileno=request.args['doc'].zfill(4)
+    path = "Prior_Cases/prior_case_"+fileno+'.txt'
+  else:
+    return "Enter document name."
+  return send_file(path, as_attachment=True)
 
 
 @app.route('/download1')
