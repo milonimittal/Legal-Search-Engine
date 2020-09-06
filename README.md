@@ -35,8 +35,8 @@ https://drive.google.com/file/d/1Ur1jNsxZ5Hys02Vs5keixNPB8V8GhI-i/view?usp=shari
 
 # See our Product!
 <br>
-<p align="center"><img src="https://github.com/milonimittal/Legal-Search-Engine/blob/master/images/netapp_main.png" width="50%"></p><br>
-<p align="center"><img src="https://github.com/milonimittal/Legal-Search-Engine/blob/master/images/netapp_murder.png"></p><br>
-<p align="center"><img src="https://github.com/milonimittal/Legal-Search-Engine/blob/master/images/netapp_advancedsearch.png"></p><br>
-<p align="center"><img src="https://github.com/milonimittal/Legal-Search-Engine/blob/master/images/netapp_advancedsearch2.png"></p><br>
+<p align="center"><img src="https://github.com/milonimittal/Legal-Search-Engine/blob/master/images/netapp_main.PNG" width="50%"></p><br>
+<p align="center"><img src="https://github.com/milonimittal/Legal-Search-Engine/blob/master/images/netapp_murder.PNG" width="50%"></p><br>
+<p align="center"><img src="https://github.com/milonimittal/Legal-Search-Engine/blob/master/images/netapp_advancedsearch.PNG" width="50%"></p><br>
+<p align="center"><img src="https://github.com/milonimittal/Legal-Search-Engine/blob/master/images/netapp_advancedsearch2.PNG" width="50%"></p><br>
 
