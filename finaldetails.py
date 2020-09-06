@@ -2,8 +2,10 @@ from test_queries import *
 from netapp_test2 import *
 from mySummarizer import *
 import re
+import h5py
 
 def getdetails(filename, count_file):
+    f=h5py.File('Summary.hdf5','r')
     details=[]
     match=re.search(r'\d+', filename)
     name="Case #"+match.group()
@@ -23,6 +25,11 @@ def getdetails(filename, count_file):
            count+=1
        details.append(ipcs1) 
     summary= generate_summary( filename, 2)
+    if(filename in f.keys() ):
+        mid=f[filename]
+        summary=mid[...]
+    else:
+        summary= generate_summary( filename, 2)
     if summary is not None:
         details.append(summary)
     else:
