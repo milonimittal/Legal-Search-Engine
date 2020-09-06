@@ -41,13 +41,17 @@ def api_query():
        flag=0
        if 'date' in request.args:
            for i in ret:
-               if (retrieve_firstdate(i)==request.args['date']):
+	       match=re.search(r'\d+', i)
+               name=match.group()
+               if (retrieve_firstdate(name)==request.args['date']):
                    fin.append(i)
            if(request.args['date']):
                flag=1
        if 'appeal_no' in request.args:
            for i in ret:
-               appellate_jurisdiction, appeal_num=retrieve_AppellateJurisdiction(i)
+	       match=re.search(r'\d+', i)
+               name=match.group()
+               appellate_jurisdiction, appeal_num=retrieve_AppellateJurisdiction(name)
                if (appeal_num==request.args['appeal_no']):
                    fin.append(i)
            if(request.args['appeal_no']):
@@ -56,7 +60,9 @@ def api_query():
            ret1=request.args['appellate']
            ret1=ret1.lower()
            for i in ret:
-               appellate_jurisdiction, appeal_num=retrieve_AppellateJurisdiction(i)
+	       match=re.search(r'\d+', i)
+               name=match.group()
+               appellate_jurisdiction, appeal_num=retrieve_AppellateJurisdiction(name)
                if(appellate_jurisdiction):
                    if (appellate_jurisdiction.lower()==ret1):
                        fin.append(i)
